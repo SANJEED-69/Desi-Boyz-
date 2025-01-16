@@ -35,23 +35,30 @@
             margin-bottom: 20px;
         }
 
-        /* Main Content Text */
-        .edi {
+        /* Profile Image Style */
+        .profile-img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid #3498db;
+            margin-top: 20px;
+        }
+
+        /* Caption Style */
+        .caption {
             font-size: 18px;
             color: #34495e;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            border: 2px solid #bdc3c7;
+            font-weight: bold;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             transition: all 0.3s ease;
         }
 
-        /* Hover Effect for Text Box */
-        .edi:hover {
-            background-color: #3498db;
-            color: white;
-            border-color: #2980b9;
+        /* Hover Effect for Caption */
+        .caption:hover {
+            color: #3498db;
+            text-decoration: underline;
         }
 
         /* Footer Style */
@@ -77,37 +84,28 @@
         .btn:hover {
             background-color: #2980b9;
         }
-
-        /* Profile Image Style */
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 5px solid #3498db;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ওয়েলকাম টু কমদামি ওয়েবসাইট</h1>
+        <h1>Welcome to কম দামি ওয়েবসাইট</h1>
         
         <!-- Your Image Section -->
-        <img src="https://raw.githubusercontent.com/SANJEED-69/Desi-Boyz-/main/IMG_7314-01.jpg" alt="Your Image" class="profile-img"> <!-- Your Image -->
+        <img src="https://raw.githubusercontent.com/SANJEED-69/Desi-Boyz-/main/IMG_7314-01.jpg" alt="Your Image" class="profile-img">
+        <div class="caption">এটা হলাম আমি</div> <!-- Caption for your image -->
 
         <!-- Partner's Image Section -->
-        <img src="https://raw.githubusercontent.com/SANJEED-69/Desi-Boyz-/main/IMG_20240211_165016_789-01.jpg" alt="Partner's Image" class="profile-img"> <!-- Partner's Image -->
+        <img src="https://raw.githubusercontent.com/SANJEED-69/Desi-Boyz-/main/IMG_20240211_165016_789-01.jpg" alt="Partner's Image" class="profile-img">
+        <div class="caption">আমার ছেলের সাথে আমি</div> <!-- Caption for partner's image -->
 
-        <div class="edi">
-            আসসালামুয়ালাইকুম, <br>
-            আমি সানজিদ ইসলাম ইষাৎ। হাসানের অবৈধ বাবা। <br>
-            কারেন্ট বেরে গেছিলো তাই ওয়েবসাইট বানাতে আসছি, ডিজাইন করতে গিয়ে কারেন্ট শেষ, তাই এখন বিদায় নিচ্ছি। <br>
-            কারেন্ট বেরে‌‌ গেলে আবার আসবো।
-        </div>
         <footer>
-            &copy; 2025 সানজিদ ইসলাম ইষাৎ। দামে কম মানে ভালো ওয়েবসাইট। 
+            &copy; 2025 সানজিদ ইসলাম ইষাৎ. দামে কম মানে ভালো ওয়েবসাইট।
         </footer>
-        <button class="btn">Contact Me</button>
+        
+        <!-- Contact Button with Link to Facebook -->
+        <a href="https://www.facebook.com/sanjeed.islam.ishat1?mibextid=ZbWKwL" target="_blank">
+            <button class="btn">Contact Me</button>
+        </a>
     </div>
 </body>
-    </html>
+</html>

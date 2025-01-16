@@ -5,65 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
     <style>
-        /* Body Style */
+        /* Global Body Style */
         body {
-            font-family: Arial, sans-serif; /* ফন্ট */
-            background-color: #f4f4f4; /* ব্যাকগ্রাউন্ড রঙ */
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        /* Container for Centering Content */
+        /* Container Style */
         .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
             max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        /* Title Style */
+        /* Header Style */
         h1 {
-            color: #3498db;
-            text-align: center;
-            font-size: 32px;
+            font-size: 36px;
+            color: #2c3e50;
             margin-bottom: 20px;
         }
 
-        /* Paragraph Style */
+        /* Main Content Text */
         .edi {
             font-size: 18px;
-            color: #333;
+            color: #34495e;
             line-height: 1.6;
             background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #bdc3c7;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover Effect for Text Box */
+        .edi:hover {
+            background-color: #3498db;
+            color: white;
+            border-color: #2980b9;
         }
 
         /* Footer Style */
         footer {
-            text-align: center;
-            font-size: 14px;
-            color: #777;
             margin-top: 30px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        /* Button Style */
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Profile Image Style */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid #3498db;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Webpage</h1>
+        <h1>ওয়েলকাম টু কমদামি ওয়েবসাইট</h1>
+        
+        <!-- Your Image Section -->
+        <img src="https://raw.githubusercontent.com/SANJEED-69/Desi-Boyz-/main/IMG_7314-01.jpg" alt="Your Image" class="profile-img"> <!-- Your Image -->
+
+        <!-- Partner's Image Section -->
+        <img src="https://raw.githubusercontent.com/SANJEED-69/Desi-Boyz-/main/IMG_20240211_165016_789-01.jpg" alt="Partner's Image" class="profile-img"> <!-- Partner's Image -->
+
         <div class="edi">
             আসসালামুয়ালাইকুম, <br>
             আমি সানজিদ ইসলাম ইষাৎ। হাসানের অবৈধ বাবা। <br>
             কারেন্ট বেরে গেছিলো তাই ওয়েবসাইট বানাতে আসছি, ডিজাইন করতে গিয়ে কারেন্ট শেষ, তাই এখন বিদায় নিচ্ছি। <br>
             কারেন্ট বেরে‌‌ গেলে আবার আসবো।
         </div>
+        <footer>
+            &copy; 2025 সানজিদ ইসলাম ইষাৎ। দামে কম মানে ভালো ওয়েবসাইট। 
+        </footer>
+        <button class="btn">Contact Me</button>
     </div>
-
-    <footer>
-        &copy; 2025 সানজিদ ইসলাম ইষাৎ. গরিবের ওয়েবসাইট
-    </footer>
 </body>
-</html>
+    </html>

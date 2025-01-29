@@ -14,15 +14,16 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
         }
 
         .container {
             background-color: #fff;
-            width: 80%;
+            width: 90%;
             max-width: 900px;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
@@ -41,7 +42,8 @@
         }
 
         .logo-container img {
-            width: 150px;
+            width: 100%;
+            max-width: 200px;
             height: auto;
             border-radius: 8px;
         }
@@ -55,7 +57,7 @@
             display: inline-block;
             margin: 10px;
             padding: 15px;
-            background-color: #f9f9f9;
+            background-color: #f0f8ff;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -78,6 +80,25 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+        }
+
+        /* For smaller devices like phones */
+        @media (max-width: 600px) {
+            .logo-container img {
+                width: 80%;
+            }
+
+            .box {
+                width: 45%;
+            }
+        }
+
+        /* For even smaller screens */
+        @media (max-width: 400px) {
+            .box {
+                width: 90%;
+                margin: 10px 0;
+            }
         }
 
     </style>
@@ -109,4 +130,4 @@
         </div>
     </div>
 </body>
-</html>
+    </html>
